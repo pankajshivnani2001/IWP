@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Demo Form</title>
+</head>
+<body>
+    <header>   
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="productDemoForm.html">Product Demo Form</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+        <hr>
+    </header>
+    <h1>Sign Up for a Free Product Demo Form</h1>
+    <p>We will give you early access to all our Products and you can provide feedback and changes.</p>
+    <h2>Enter Details Below</h2>
+
+    <form method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Your Name Here" required>
+        <br><br>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age" placeholder="Your Age Here" value="18" min="18" max="80">
+        <br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Your Email Here" required>
+        <br><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" id="male" value="Male">Male
+        <input type="radio" name="gender" id="female" value="Female">Female
+        <br><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" name="phone" id="phone" placeholder="Your Phone No. Here" required>
+        <br><br>
+
+        <span>Choose the Products You Want to Try</span><br>
+        <label for="product-1">Product 1</label>
+        <input id="product-1" name="products" type="checkbox" value="product-1">
+        <br>
+        <label for="product-2">Product 2</label>
+        <input id="product-2" name="products" type="checkbox" value="product-2">
+        <br>
+        <label for="product-3">Product 3</label>
+        <input id="product-3" name="products" type="checkbox" value="product-3">
+        <br>
+        <label for="product-4">Product 4</label>
+        <input id="product-4" name="products" type="checkbox" value="product-4">
+        <br>
+        <label for="product-5">Product 5</label>
+        <input id="product-5" name="products" type="checkbox" value="product-5">
+        <br>
+
+        
+        
+        <br><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
