@@ -11,54 +11,90 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
-            <a href="productDemoForm.html">Product Demo Form</a>
+            <a href="productDemoForm.html">Product Demo</a>
             <a href="faqs.html">FAQs</a>
         </nav>
         <hr>
     </header>
+
     <h1>Sign Up for a Free Product Demo Form</h1>
     <p>We will give you early access to all our Products and you can provide feedback and changes.</p>
-    <h2>Enter Details Below</h2>
+    <hr>
 
     <form method="POST">
-        <label for="name">Name</label><br>
+        <h2>Enter Details Below</h2>
+
+        <label for="name"><b>Name</b></label><br>
         <input type="text" name="name" id="name" placeholder="Your Name Here" required>
         <br><br>
-        <label for="age">Age</label><br>
-        <input type="number" name="age" id="age" placeholder="Your Age Here" value="18" min="18" max="80">
+
+        <label for="age"><b>Age</b></label><br>
+        <input type="number" name="age" id="age" placeholder="Your Age Here" value="18" min="18" max="80" required>
         <br><br>
-        <label for="email">Email</label><br>
+
+        <label for="email"><b>Email</b></label><br>
         <input type="email" name="email" id="email" placeholder="Your Email Here" required>
         <br><br>
-        <label for="gender">Gender</label><br>
+
+        <label for="gender"><b>Gender</b></label><br>
         <input type="radio" name="gender" id="male" value="Male">Male
         <input type="radio" name="gender" id="female" value="Female">Female
         <br><br>
-        <label for="phone">Phone Number</label><br>
+
+        <label for="phone"><b>Phone Number</b></label><br>
         <input type="tel" name="phone" id="phone" placeholder="Your Phone No. Here" required>
         <br><br>
 
-        <span>Choose the Products You Want to Try</span><br>
-        <label for="product-1">Product 1</label>
-        <input id="product-1" name="products" type="checkbox" value="product-1">
-        <br>
-        <label for="product-2">Product 2</label>
-        <input id="product-2" name="products" type="checkbox" value="product-2">
-        <br>
-        <label for="product-3">Product 3</label>
-        <input id="product-3" name="products" type="checkbox" value="product-3">
-        <br>
-        <label for="product-4">Product 4</label>
-        <input id="product-4" name="products" type="checkbox" value="product-4">
-        <br>
-        <label for="product-5">Product 5</label>
-        <input id="product-5" name="products" type="checkbox" value="product-5">
-        <br>
+        <label for="address"><b>Address</b></label><br>
+        <textarea name="address" id="address" rows="5" placeholder="Your Address Here" required></textarea>
+        <br><br>
 
+        <label for="city"><b>Select City</b></label><br>
+        <select id="city" name="city">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Goa">Goa</option>
+            <option value="Pune">Pune</option>
+        </select>
+        <br><br>
+
+        <span><b>Choose the Products You Want to Try</b></span><br>
+        <label for="pizza">Pizza</label>
+        <input id="pizza" name="products" type="checkbox" value="pizza">
+        <br>
+        <label for="pasta">Pasta</label>
+        <input id="pasta" name="products" type="checkbox" value="pasta">
+        <br>
+        <label for="risotto">Risotto</label>
+        <input id="risotto" name="products" type="checkbox" value="risotto">
+        <br>
+        <label for="lasagna">Lasagna</label>
+        <input id="lasagna" name="products" type="checkbox" value="lasagna">
+        <br>
+        <label for="spaghetti">Spaghetti</label>
+        <input id="spaghetti" name="products" type="checkbox" value="spaghetti">
+        <br>
+        <label for="garlicBread">Garlic Bread</label>
+        <input id="garlicBread" name="products" type="checkbox" value="garlicBread">
+        <br><br>
+
+        <label for="portionSize"><b>Choose Portion Size</b></label><br>
+        <input type="number" placeholder="Size" min="1" max="4" required>
+        <br><br>
+
+        <label for="deliveryDate"><b>Choose Delivery Date</b></label><br>
+        <input type="date" name="deliveryDate" id="deliveryDate" required>
+        <br><br>
+
+        <label for="deliveryTime"><b>Choose Delivery Time</b></label><br>
+        <input type="time" name="deliveryTime" id="deliveryTime" required>
         
         
         <br><br><br>
-        <button type="submit">Submit</button>
+        <button type="submit">Place Order</button>
         <button type="reset">Reset</button>
     </form>
 </body>
